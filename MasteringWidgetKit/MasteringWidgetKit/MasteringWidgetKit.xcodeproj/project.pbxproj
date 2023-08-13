@@ -146,6 +146,9 @@
 		9FD25940293F959500FA36DF /* FamousPlaceMapWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2593F293F959500FA36DF /* FamousPlaceMapWidget.swift */; };
 		9FD25944293FA42200FA36DF /* FocusTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD25943293FA42200FA36DF /* FocusTimerAttributes.swift */; };
 		9FD25945293FA42200FA36DF /* FocusTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD25943293FA42200FA36DF /* FocusTimerAttributes.swift */; };
+		A0E0284729DEE8E400A48F76 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65E8A02914795C0072733B /* WidgetKit.framework */; };
+		A0E0284829DEE8E400A48F76 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F65E8A22914795C0072733B /* SwiftUI.framework */; };
+		A0E0285329DEE8E700A48F76 /* DevTechieWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0E0284629DEE8E400A48F76 /* DevTechieWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +166,13 @@
 			remoteGlobalIDString = 9FD25909293533E600FA36DF;
 			remoteInfo = CustomStockIntent;
 		};
+		A0E0285129DEE8E700A48F76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F65E8812914721F0072733B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0E0284529DEE8E400A48F76;
+			remoteInfo = DevTechieWidgetsExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -172,6 +182,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				A0E0285329DEE8E700A48F76 /* DevTechieWidgetsExtension.appex in Embed Foundation Extensions */,
 				9FD25913293533E600FA36DF /* CustomStockIntent.appex in Embed Foundation Extensions */,
 				9F65E8AE2914795E0072733B /* DevTechieWidgetsExtension.appex in Embed Foundation Extensions */,
 			);
@@ -302,6 +313,7 @@
 		9FD2593D293F931D00FA36DF /* FamousPlaceMapProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousPlaceMapProvider.swift; sourceTree = "<group>"; };
 		9FD2593F293F959500FA36DF /* FamousPlaceMapWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousPlaceMapWidget.swift; sourceTree = "<group>"; };
 		9FD25943293FA42200FA36DF /* FocusTimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTimerAttributes.swift; sourceTree = "<group>"; };
+		A0E0284629DEE8E400A48F76 /* DevTechieWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DevTechieWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +338,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD2590C293533E600FA36DF /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E0284329DEE8E400A48F76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E0284829DEE8E400A48F76 /* SwiftUI.framework in Frameworks */,
+				A0E0284729DEE8E400A48F76 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +416,7 @@
 				9F65E889291472200072733B /* MasteringWidgetKit.app */,
 				9F65E89E2914795C0072733B /* DevTechieWidgetsExtension.appex */,
 				9FD2590A293533E600FA36DF /* CustomStockIntent.appex */,
+				A0E0284629DEE8E400A48F76 /* DevTechieWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -716,6 +738,7 @@
 			dependencies = (
 				9F65E8AD2914795E0072733B /* PBXTargetDependency */,
 				9FD25912293533E600FA36DF /* PBXTargetDependency */,
+				A0E0285229DEE8E700A48F76 /* PBXTargetDependency */,
 			);
 			name = MasteringWidgetKit;
 			productName = MasteringWidgetKit;
@@ -756,6 +779,23 @@
 			productReference = 9FD2590A293533E600FA36DF /* CustomStockIntent.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		A0E0284529DEE8E400A48F76 /* DevTechieWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0E0285429DEE8E700A48F76 /* Build configuration list for PBXNativeTarget "DevTechieWidgetsExtension" */;
+			buildPhases = (
+				A0E0284229DEE8E400A48F76 /* Sources */,
+				A0E0284329DEE8E400A48F76 /* Frameworks */,
+				A0E0284429DEE8E400A48F76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevTechieWidgetsExtension;
+			productName = DevTechieWidgetsExtension;
+			productReference = A0E0284629DEE8E400A48F76 /* DevTechieWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -763,7 +803,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					9F65E888291472200072733B = {
@@ -774,6 +814,9 @@
 					};
 					9FD25909293533E600FA36DF = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					A0E0284529DEE8E400A48F76 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -793,6 +836,7 @@
 				9F65E888291472200072733B /* MasteringWidgetKit */,
 				9F65E89D2914795C0072733B /* DevTechieWidgetsExtension */,
 				9FD25909293533E600FA36DF /* CustomStockIntent */,
+				A0E0284529DEE8E400A48F76 /* DevTechieWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -816,6 +860,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9FD25908293533E600FA36DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0E0284429DEE8E400A48F76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -977,6 +1028,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0E0284229DEE8E400A48F76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -989,6 +1047,11 @@
 			isa = PBXTargetDependency;
 			target = 9FD25909293533E600FA36DF /* CustomStockIntent */;
 			targetProxy = 9FD25911293533E600FA36DF /* PBXContainerItemProxy */;
+		};
+		A0E0285229DEE8E700A48F76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0E0284529DEE8E400A48F76 /* DevTechieWidgetsExtension */;
+			targetProxy = A0E0285129DEE8E700A48F76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1117,7 +1180,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MasteringWidgetKit/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MasteringWidgetKit/Info.plist;
@@ -1133,7 +1196,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1151,7 +1214,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MasteringWidgetKit/Preview Content\"";
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MasteringWidgetKit/Info.plist;
@@ -1167,7 +1230,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1183,7 +1246,7 @@
 				CODE_SIGN_ENTITLEMENTS = DevTechieWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DevTechieWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DevTechieWidgets;
@@ -1194,7 +1257,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit.DevTechieWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.DevTechieWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1211,7 +1274,7 @@
 				CODE_SIGN_ENTITLEMENTS = DevTechieWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DevTechieWidgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DevTechieWidgets;
@@ -1222,7 +1285,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit.DevTechieWidgets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.DevTechieWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1236,7 +1299,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomStockIntent/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CustomStockIntent;
@@ -1247,7 +1310,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit.CustomStockIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.CustomStockIntent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1261,7 +1324,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 63Y3987Z9A;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomStockIntent/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CustomStockIntent;
@@ -1272,7 +1335,63 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devtechie.MasteringWidgetKit.CustomStockIntent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.CustomStockIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0E0285529DEE8E700A48F76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevTechieWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DevTechieWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.DevTechieWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0E0285629DEE8E700A48F76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 546F74TH4Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DevTechieWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DevTechieWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kwccoin.MasteringWidgetKit.DevTechieWidgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1316,6 +1435,15 @@
 			buildConfigurations = (
 				9FD25915293533E600FA36DF /* Debug */,
 				9FD25916293533E600FA36DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0E0285429DEE8E700A48F76 /* Build configuration list for PBXNativeTarget "DevTechieWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E0285529DEE8E700A48F76 /* Debug */,
+				A0E0285629DEE8E700A48F76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
